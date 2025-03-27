@@ -19,5 +19,10 @@
 /* Footer style */
 
 .footer {
-    --ion-background-color: var(--ion-text-color);
+    --ion-background-color: #ff3777;
+    --ion-text-color: #ff37;
+    --ion-text-style: bold;
+    -ms-flex-align: end;
+    position: relative;
+    bottom: 0px;
 }

@@ -30,13 +30,14 @@ const Home: React.FC = () => {
             <IonTitle size="large">Lebogang Mokoena</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonToolbar>
-          <IonFooter>
-            <IonTitle size="large">Assignment Day 1</IonTitle>
-          </IonFooter>
-        </IonToolbar>
         <ExploreContainer />
       </IonContent>
+          <IonFooter class='footer'>
+            <IonToolbar>
+            <IonTitle size="large">Assignment Day 1</IonTitle>
+            </IonToolbar>
+          </IonFooter>
+        
     </IonPage>
   );
 };
