@@ -1,0 +1,23 @@
+/* background color of my app */
+
+:root {
+    --ion-background-color: #ff37;
+}
+
+:root.io {
+    --ion-text-color: #ff3777;
+}
+
+:root.md {
+    --ion-text-color: #ff3777;
+}
+
+
+/* Nav bar color */
+
+
+/* Footer style */
+
+.footer {
+    --ion-background-color: var(--ion-text-color);
+}

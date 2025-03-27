@@ -1,13 +1,27 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonButtons, IonContent,
+  IonFooter,
+  IonHeader,
+  IonIcon,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar,} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import React from 'react';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+        <IonToolbar color="dark">
+          <IonTitle>Lebogang Mokoena</IonTitle>
+          <IonButtons slot='end'>
+            <IonMenuButton autoHide={false}></IonMenuButton>
+          </IonButtons>
+          <IonIcon slot='start'>
+            <ion-icon src="./assets/person-circle-outline.jpg" name="person-circle-outline" role="img" class="md"></ion-icon>
+          </IonIcon>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -16,6 +30,11 @@ const Home: React.FC = () => {
             <IonTitle size="large">Lebogang Mokoena</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <IonToolbar>
+          <IonFooter>
+            <IonTitle size="large">Assignment Day 1</IonTitle>
+          </IonFooter>
+        </IonToolbar>
         <ExploreContainer />
       </IonContent>
     </IonPage>
